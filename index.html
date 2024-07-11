@@ -1,0 +1,452 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Primer Boceto</title>
+</head>
+
+    <body>
+        <header>
+            <di class="header">
+                <div>
+                    <img src="img/logo.svg">
+                </div>
+
+                <div class="opcionesHeader">
+                <p id="home">Home</p>
+                <p id="cine">Cine</p>
+                <p id="tv">TV</p>
+                <p id="comics">Cómics</p>
+                <p id="videojuegos">Videojuegos</p>
+                <p id="entrevistas">Entrevistas</p>
+                </div>
+                <div class="lupa">
+                    <img src="img/lupa.svg">
+                    <img src="img/fotoPerfil.svg" alt="">
+                </div>
+            </div>
+        </header>
+        
+        <main>
+        <div class="seccionDescripcion">
+            <div class="textoDescripcion">
+                <div class="contenedorTitulo">
+                    <h2>NAHIR: ENTREVISTA CON VALENTINA ZENERE Y SIMÓN HEMPE</h2>
+                </div>
+                
+                <div class="textoYeditora">
+                    <p style="font-size: 22px;">En el marco del estreno de la película Nahir en Amazon Prime Video, nuestra Lucía Agosta habló con Valentina Zenere (Elite, Soy Luna) y Simón Hempe (La Sociedad De La Nieve) sobre cómo fue para ellos sumarse a este proyecto basado en el caso real de Nahir Galarza, que se convirtió en la mujer más joven en ser condenada a cadena perpetua por matar a su novio. La historia da un giro cuando ella acusa a su padre policía de ser el verdadero asesino.</p>
+                    <div class="editora">
+                        <img src="img/fotoPerfilEditora.svg" alt="">
+                        <div class="editoraTexto" style="width: 18rem;">
+                            <p style="font-weight: 700;">LUAGOSTA</p>
+                            <P style="font-weight: 400;">Colaboradora y editora de video</P>
+                        </div>
+                        <div class="fechaYeditora">
+                            <div id="redes">
+                                <img src="img/logoInstaEditora.svg" alt="">
+                                <img src="img/logoXEditora.svg" alt="">
+                            </div>
+                            <div id="fecha">
+                                
+                                <p style="font-size: 20px;">2 de Mayo</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="seccionVideoEntrevista">
+            <div class="cajatitulo">
+                <div class="titulo">
+                    <img src="img/linea.svg">
+                    <h2 style="font-size: 20px;">ENTREVISTA COMPLETA</h2>
+                </div>
+            </div>
+            
+            <div class="video">
+                <iframe width="1160" height="615" style="border-radius: 10px;" src="https://www.youtube.com/embed/fEDcwsedMDw?si=ziIsPIt95Kb4WTPX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="likeEntrevista">
+                <label class="heart-container">
+                    <input type="checkbox" id="heart-toggle">
+                    <img src="img/corazon.svg" alt="Corazón" class="heart">
+                    <img src="img/corazonRojo.svg" alt="Corazón Rojo" class="heart red-heart">
+                </label>
+                <p id="like-count" style="font-weight: 400; font-size: 20px; color: #f1f1f1;">455</p>
+            </div>
+            
+        </div>
+
+        <div class="seccionComentarios">
+            <div class="cajatitulo">
+                <div class="titulo">
+                    <img src="img/linea.svg">
+                    <h2 style="font-size: 25px;">Comentarios</h2>
+                </div>
+            </div>
+
+            <form id="formulario">
+                <div class="texto-boton">
+                    <textarea name="msj" id="msj" placeholder="¿Qué opinas sobre la entrevista?" required="true" rows="5" ></textarea>
+                    <input type="submit" value="Enviar" id="enviar">
+                </div>
+            </form>
+            
+            
+        
+        </div>
+            
+            <div class="comentario1">
+            <div class="image-container">
+                <img src="img/logoPersona.svg" alt="Logo Persona" style="width: 150px;">
+                <div class="nombreusuarioYtexto">
+                <div class="text-container">
+                    <div class="usernames" style="font-size: 20px;">@manolitogafotas23</div>
+                    <div class="highlight">Comentario Destacado</div>
+                    <div class="date">hace 3 días</div>
+                </div>
+                <div class="lorem-text">
+                    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario 
+                        de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+                </div>
+                </div>
+            </div>
+            
+            <form id="formulario-responder" class="oculto-responder-contenedor">
+                <div class="texto-boton">
+                    <textarea name="msj-responder" id="msj-responder" placeholder="¿Qué opinas sobre la entrevista?" required="true" rows="5"></textarea>
+                    <input type="submit" value="Enviar" id="enviar-responder">
+                </div>
+            </form>
+
+            <div class="reaction-container">
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="like-imagen">
+                        <img src="img/like blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/like verde.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="like-count-imagen" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">80</p>
+                </div>
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="dislike-imagen">
+                        <img src="img/dislike blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/dislike rojo.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="dislike-count-imagen" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">6</p>
+                </div>
+                <input type="submit" value="Responder" id="responder">
+            </div>
+        </div>
+
+       
+            
+
+        <div class="comentario2">
+            <div class="image-container">
+                <img src="img/logopersona2.svg" alt="Logo Persona 2" style="width: 150px;">
+                <div class="nombreusuarioYtexto">
+                <div class="text-container">
+                    <div class="usernames" style="font-size: 20px;">@raulalvarezz_</div>
+                    <div class="date">hace 1 día</div>
+                </div>
+                <div class="lorem-text">
+                    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario 
+                        de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="reaction-container">
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="like-imagen2">
+                        <img src="img/like blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/like verde.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="like-count-imagen2" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">0</p>
+                </div>
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="dislike-imagen2">
+                        <img src="img/dislike blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/dislike rojo.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="dislike-count-imagen2" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">6</p>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="oculto-responder" id="feedback-responder">
+            <div class="image-container-feedback" id="comentarioTu" class="oculto">
+                <img src="img/fotoPerfilYo.svg" alt="Logo Persona 2" style="width: 70px;">
+                <div class="nombreusuarioYtexto">
+                <div class="text-container">
+                    <div class="usernames" style="font-size: 20px;">@ramona243 (tu)</div>
+                    <div class="date">Ahora</div>
+            </div>
+            <div class="lorem-text" id="comentarioTu" class="oculto">
+                <p><span id="msj-placeholder-responder"></span></p>
+            </div>
+            <div class="feedback-buttons">
+                <div class="reaction-container-ComentarioNuevo">
+                    <div class="likeComentario">
+                        <label class="heart-container">
+                            <input type="checkbox" id="like-imagen3">
+                            <img src="img/like blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                            <img src="img/like verde.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                        </label>
+                        <p id="like-count-imagen3" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">0</p>
+                    </div>
+                    <div class="likeComentario">
+                        <label class="heart-container">
+                            <input type="checkbox" id="dislike-imagen3">
+                            <img src="img/dislike blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                            <img src="img/dislike rojo.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                        </label>
+                        <p id="dislike-count-imagen3" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">0</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            </div>
+
+        </div>
+        </div>
+
+        <div class="oculto" id="feedback">
+            <div class="image-container-feedback" id="comentarioTu" class="oculto">
+                <img src="img/fotoPerfilYo.svg" alt="Logo Persona 2" style="width: 80px;">
+                <div class="nombreusuarioYtexto">
+                <div class="text-container">
+                    <div class="usernames" style="font-size: 20px;">@ramona243 (tu)</div>
+                    <div class="date">Ahora</div>
+            </div>
+            <div class="lorem-text" id="comentarioTu" class="oculto">
+                <p><span id="msj-placeholder"></span></p>
+            </div>
+            <div class="feedback-buttons">
+                <div class="reaction-container-ComentarioNuevo">
+                    <div class="likeComentario">
+                        <label class="heart-container">
+                            <input type="checkbox" id="like-imagen5">
+                            <img src="img/like blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                            <img src="img/like verde.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                        </label>
+                        <p id="like-count-imagen5" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">0</p>
+                    </div>
+                    <div class="likeComentario">
+                        <label class="heart-container">
+                            <input type="checkbox" id="dislike-imagen5">
+                            <img src="img/dislike blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                            <img src="img/dislike rojo.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                        </label>
+                        <p id="dislike-count-imagen5" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">0</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        <div class="comentario1">
+            <div class="image-container">
+                <img src="img/logopersona3.svg" alt="Logo Persona" style="width: 150px;">
+                <div class="nombreusuarioYtexto">
+                <div class="text-container">
+                    <div class="usernames" style="font-size: 20px;">@roxanne234</div>
+                    <div class="date">hace 5 días</div>
+                </div>
+                <div class="lorem-text">
+                    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario 
+                        de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="reaction-container">
+             
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="like-imagen6">
+                        <img src="img/like blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/like verde.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="like-count-imagen6" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">52</p>
+                </div>
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="dislike-imagen6">
+                        <img src="img/dislike blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/dislike rojo.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="dislike-count-imagen6" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">12</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="comentario1">
+            <div class="image-container">
+                <img src="img/perfilmujer.svg" alt="Logo Persona" style="width: 150px;">
+                <div class="nombreusuarioYtexto">
+                <div class="text-container">
+                    <div class="usernames" style="font-size: 20px;">@cristinaguilera</div>
+                    <div class="date">hace 5 días</div>
+                </div>
+                <div class="lorem-text">
+                    <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario 
+                        de usar textos como por ejemplo "Contenido aquí, contenido aquí".</p>
+                </div>
+                </div>
+            </div>
+            
+            <div class="reaction-container">
+             
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="like-imagen4">
+                        <img src="img/like blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/like verde.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="like-count-imagen4" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">30</p>
+                </div>
+                <div class="likeComentario">
+                    <label class="heart-container">
+                        <input type="checkbox" id="dislike-imagen4">
+                        <img src="img/dislike blanco.svg" alt="Corazón" class="heart" style="width: 25px;">
+                        <img src="img/dislike rojo.svg" alt="Corazón Rojo" class="heart red-heart" style="width: 25px;">
+                    </label>
+                    <p id="dislike-count-imagen4" style="font-weight: 400; font-size: 18px; color: #f1f1f1;">8</p>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+
+
+
+
+        
+        <div class="boton-vermas">
+            <div class="botonverMas">
+                <p>Ver más</p>
+            </div>
+        </div>
+        
+        <div class="contenedor-titulo">
+            <img src="img/lineaHorizontal.svg" alt="">
+            <h2 class="titulo-interes">Te podría interesar</h2>
+        </div>
+
+        <div class="sugerencias1">
+            <div class="kaiju">
+                <img src="img/1.svg" alt="" style="width: 240px;">
+                <div class="textoYfecha-sugerencias">
+                    <div class="texto-superior">KAIJU Nº8: HABLAMOS CON SUS ESTRELLAS DE DOBLAJE <br></div>
+                    <div class="calenddarie">
+                       
+                        <p style="color: #f9f9f9;">18 de Mayo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="kaiju">
+                <img src="img/3.svg" alt="" style="width: 250px;">
+                <div class="textoYfecha-sugerencias">
+                    <div class="texto-superior">FURIOSA: ENTREVISTA CON ANYA TAYLOR-JOY <br> </div>
+                    <div class="calenddarie">
+                        
+                        <p style="color: #f9f9f9;">20 de Mayo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sugerencias2">
+            <div class="kaiju">
+                <img src="img/2.svg" alt="">
+                <div class="textoYfecha-sugerencias">
+                    <div class="texto-superior">UN CABALLERO EN MOSCÚ: <br> HABLAMOS CON  MARY ELIZABETH WINSTEAD</div>
+                    <div class="calenddarie">
+                        
+                        <p style="color: #f9f9f9;">22 de Mayo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="kaiju">
+                <img src="img/4.svg" alt="">
+                <div class="textoYfecha-sugerencias">
+                    <div class="texto-superior">DARK MATTER: HABLAMOS CON <br>EL 
+                        ELENCO Y CREADORES DE LA SERIE</div>
+                    <div class="calenddarie">
+                        
+                        <p style="color: #f9f9f9;">26 de Mayo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src="script.js"></script>
+    </main>
+
+        <footer>
+            <div class="footer-contenedor">
+                <div class="contacto">
+                    <h2 style="font-family: 'Montserrat'; font-size: medium;">Contacto</h2>
+                    <img src="img/logo.svg" alt="Logo">
+                    <p>web@lacosacine.com</p>
+                </div>
+    
+                <div class="seguinos">
+                    <h2 style="font-family: 'Montserrat'; font-size: medium; margin-right: 20rem;">Seguinos</h2>
+                    <div class="redes-sociales">
+                        <img src="img/insta.svg" alt="">
+                        <img src="img/facebook.svg" alt="">
+                        <img src="img/x.svg" alt="">
+                        <img src="img/youtube.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <p style="font-family: 'Montserrat'; font-size: 15px; margin-left: 30rem;">© La Cosa Cine 2019 - Cine y Series </p>
+        </footer>
+
+
+    
+    
+    </body>
+        
+        
+        
+        </html>
+                    <!--<script src="scripts.js"></script>
+                    <div class="footer">
+                        <div class="contacto">
+                            <h1>Contacto</h1>
+                            <img src="img/logo.svg" alt="Logo">
+                            <p>web@lacosacine.com</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+    
